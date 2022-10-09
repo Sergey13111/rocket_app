@@ -1,3 +1,43 @@
+# Rocket
+
+## Technologies used
+
+1. [ReactJS](https://reactjs.org/) 18.2.0 - JavaScript library for building user interfaces
+
+1. [npm](https://www.npmjs.com/)
+
+1. [Redux Toolkit](https://redux-toolkit.js.org/)
+
+1. [Material UI](https://mui.com/) - Component Library
+
+1. [React Hook Form](https://react-hook-form.com/) - libraries for working with forms
+
+1. [Yup](https://react-hook-form.com/get-started#schemavalidation) - validation rules library.
+
+1. [Firebase Authentication](https://firebase.google.com/docs/build?authuser=0&hl=en) - authentication on Websites.
+
+1. [api](https://api.spacexdata.com) - interaction with data using api
+
+1. [netlify](https://rockettop.netlify.app) - deploy for application on
+
+The application implements authentication, the ability to view the profile of an authorized user, the ability to log out, add dragons to favorites, view favorites, remove dragons from favorites.
+Implemented pagination, viewing detailed information on the dragon, photo slider.
+
+## Local development
+
+In order to deploy the application locally, you need to set up environment variables for initialization firebase in file firebase.js.
+
+```JavaScript
+const firebaseConfig = {
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+	authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_FIREBASE_APP_ID,
+}
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
